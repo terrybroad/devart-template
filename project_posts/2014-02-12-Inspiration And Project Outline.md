@@ -6,4 +6,5 @@ I want to further this dedicated enquiry into the digital domain, and build a di
 
 This [video](https://www.youtube.com/watch?v=1BbDZTKxXGQ) is a screen capture from my first prototype, testing two image feeds through the oculus rift, with a simple posterise shader applied to the image. Developed in C++ using the openFrameworks library. 
 
-![image1](project_images/screenshot1.png)
+![image1](../project_images/screenshot1.png)
+![image2](../project_images/screenshot2.png)
