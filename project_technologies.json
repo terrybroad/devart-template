@@ -1,15 +1,17 @@
 {
     "technologies": {
         "apis": [
-            "youtube api",
-            "android api"
+            "youtube api"
         ],
         "platforms": [
             "openframeworks",
             "mac os"
         ],
         "toolkits": [
-            "opencv"
+            "opencv",
+            "maximillian",
+            "wekinator",
+            "open sound control"
         ]
     },
     "themes": [
