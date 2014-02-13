@@ -1,33 +1,54 @@
-# Project Title
-Insert the name of your project
+# Mediated Perceptions
 
-## Authors
-- Insert main author name, surname, github account
-- Insert other author(s) name, surname, github account (one per list element)
+## Terence Broad
+- [GitHub Account](https://github.com/terrybroad "GitHub Account")
 
 ## Description
-Insert a description containing about 100 to 150 words, including your motivation and the meaning behind your idea and execution. The Judges will be keen to know how your idea pushes the boundaries of code and technology. 
+'Mediated Perceptions' is an experimental inquiry into the possibilities facilitated by having a fully governable prosthetic layer that alters the peceptual field of the outside world. A stereoscopic camera rig will be built and attached to the Oculus Rift along with headphones and a microphone rig, which will extend the field of auditory and visual perception.
 
+An experience similiar to that of synaesthesia will be created by exploring the strong positive relationship between synchronised audio and visual experience. In order to achieve this, experimental image and audio analysis techniques will be used to control audio and visiual filtering techniques.
+
+Live streaming to YouTube will be implemented to allow many people simoultaniously to have the same perceptual experience. 
 ## Link to Prototype
-NOTE: If your project lives online you can add one or more links here. Make sure you have a stable version of your project running before linking it.
 
-[Example Link](http://www.google.com "Example Link")
+[Initial Prototype](https://github.com/terrybroad/oculus-mediated-vision-prototype-1 "Initial Prototype")
 
 ## Example Code
 NOTE: Wrap your code blocks or any code citation by using ``` like the example below.
 ```
-function test() {
-  console.log("Printing a test");
-}
+         GL_LINEAR;
+         GL_LINEAR_MIPMAP_LINEAR;
+         framebuffer.begin();
+         tex[0].bind();
+         mesh.draw();
+         tex[0].unbind();
+         framebuffer.end();
+        
+         hmdWarpShader.begin();
+         hmdWarpShader.setUniformTexture("tex", framebuffer.getTextureReference(), 0);
+         hmdWarpShader.setUniform2f("LensCenter", _x + (0+ DistortionXCenterOffset * 0.5f)*0.5f, _y + _h*0.5f );
+         hmdWarpShader.setUniform2f("ScreenCenter", _x + _w*1.0f, _y + _h*1.0f );
+         hmdWarpShader.setUniform2f("Scale", (_w/1.0f) * 1.0f, (_h/1.0f) * 1.0f * as );
+         hmdWarpShader.setUniform2f("ScaleIn", (1.0f/_w), (1.0f/_h) / as );
+         hmdWarpShader.setUniform4f("HmdWarpParam", K0, K1, K2, K3 );
+
+         ofPushMatrix();
+         ofTranslate(0,0);
+         framebuffer.draw(0, 0);
+         ofPopMatrix();
+         hmdWarpShader.end();
+         tex[0].unbind();
 ```
 ## Links to External Libraries
- NOTE: You can also use this space to link to external libraries or Github repositories you used on your project.
-
-[Example Link](http://www.google.com "Example Link")
+ 
+[openFrameworks](https://github.com/openframeworks/openFrameworks "openFramworks") <br>
+[openCV](https://github.com/Itseez/opencv "OpenCV") <br>
+[Maximillian](https://github.com/micknoise/Maximilian "Maximillian") <br>
+[Google C++ API](https://github.com/google/google-api-cpp-client "https://github.com/google/google-api-cpp-client") <br>
+[Wekinator](https://code.google.com/p/wekinator/ "Wekinator") <br>
+[OSC](http://opensoundcontrol.org/ "OSC") <br>
 
 ## Images & Videos
 NOTE: For additional images you can either use a relative link to an image on this repo or an absolute link to an externally hosted image.
 
-![Example Image](project_images/cover.jpg?raw=true "Example Image")
-
-https://www.youtube.com/watch?v=30yGOxJJ2PQ
+https://www.youtube.com/watch?v=1BbDZTKxXGQ&feature=youtu.be
