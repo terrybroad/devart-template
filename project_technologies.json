@@ -1,23 +1,24 @@
 {
     "technologies": {
         "apis": [
-            "YouTube Streaming API"
+            "youtube api"
         ],
         "platforms": [
-            "Mac OSX"
+            "openframeworks",
+            "mac os"
         ],
         "toolkits": [
-            "openFrameworks"
-            "openCV"
-            "Maximillian"
-            "Wekinator"
+            "openFrameworks",
+            "openCV",
+            "Maximillian",
+            "Wekinator",
             "Open Sound Control"
         ]
     },
     "themes": [
-        "Perception"
-        "Augmented Reality"
-        "Altered Reality"
-        "Synaesthesia"
+        "Perception",
+        "Augmented Reality",
+        "Altered Reality",
+        "Synaesthesia",
     ]
 }
