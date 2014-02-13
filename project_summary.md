@@ -12,7 +12,7 @@ Live streaming to YouTube will be implemented to allow many people simoultanious
 ## Link to Prototype
 
 [Initial Prototype](https://github.com/terrybroad/oculus-mediated-vision-prototype-1 "Initial Prototype")
-
+<!--
 ## Example Code
 NOTE: Wrap your code blocks or any code citation by using ``` like the example below.
 ```
@@ -38,7 +38,7 @@ NOTE: Wrap your code blocks or any code citation by using ``` like the example b
          ofPopMatrix();
          hmdWarpShader.end();
          tex[0].unbind();
-```
+```-->
 ## Links to External Libraries
  
 [openFrameworks](https://github.com/openframeworks/openFrameworks "openFramworks") <br>
