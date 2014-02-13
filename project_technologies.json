@@ -5,7 +5,8 @@
         ],
         "platforms": [
             "openFrameworks",
-            "Mac OS"
+            "Mac OS",
+            "c++"
         ],
         "toolkits": [
             "openCV",
