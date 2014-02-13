@@ -49,6 +49,4 @@ NOTE: Wrap your code blocks or any code citation by using ``` like the example b
 [OSC](http://opensoundcontrol.org/ "OSC") <br>
 
 ## Images & Videos
-NOTE: For additional images you can either use a relative link to an image on this repo or an absolute link to an externally hosted image.
-
 https://www.youtube.com/watch?v=1BbDZTKxXGQ&feature=youtu.be
