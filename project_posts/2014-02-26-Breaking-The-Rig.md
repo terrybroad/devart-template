@@ -1,11 +1,15 @@
-A major source of inspiration for this project is a series of artworks called Vision Machines by the Austrian Artist Alfons Shilling created during the 1970's. Shilling created many contraptions that completely altered the pereptual field in fundamental ways. (pictured below is one of his pieces which allows you view the world as if your eyes were one foot apart). 
+So as i said in my first post,  I've copied the rig setup developed by Will Steptoe[AR-Rift](http://willsteptoe.com/post/66968953089/ar-rift-part-1)). Who has been an incredibly useful resource for my project and very kind in sending me the .stl files that he created for the rig. Which I then 3D printed myself.
+![image1](../project_images/3dprint1.jpg)
+![image2](../project_images/3dprint3.jpg)
+I then took two logitec c310 webcams and ripped them apart, I also took two WideCam F100 and ripped the lenses off them and superglued them to the boards of the c310's. 
+![image3](../project_images/camera1.jpg)
+![image4](../project_images/camera2.jpg)
+I then set the camera boards in thermoplastic and let it set. 
 
-![Alfons Shilling](http://www.alfonsschilling.net/s/img/emotionheader.jpg?1376585676.940px.210px "Vision Machine")
+I then got to work on cutting them down to size (sawing plastic with a low melting point turns out to be a nightmare btw).
+![image5](../project_images/camera3.jpg)
+After a couple of hours and some sore arms. It was about time to test the whole rig out properly with the rift, and guess what.... the webcams werent recognised. Spent a couple of hours trying to diagnose a problem with the software and in the end decided to rip the board off the plastic and saw this.
+![image5](../project_images/camera4.jpg)
+I had managed to rip a resistor and the ribbon cable attachment of the bottom of the circuit board as I was sawing it. 
 
-I want to further this dedicated enquiry into the digital domain, and build a digital layer between the outside world and our perceptions, and explore the possibilities of altering the perceptual field. The crucial instrument in this layer will be an Oculus Rift, and a stereo camera rig to be attached to it. (I will be mimicking the rig developed by Will Steptoe at UCL, who kindly gave me the 3D models he developed for his project [AR-Rift](http://willsteptoe.com/post/66968953089/ar-rift-part-1))
-
-[video](https://www.youtube.com/watch?v=1BbDZTKxXGQ)
-This video is a screen capture from my first prototype, testing two image feeds through the oculus rift, with a simple posterise shader applied to the image. Developed in C++ using the openFrameworks library. 
-
-![image1](../project_images/screenshot1.png)
-![image2](../project_images/screenshot2.png)
+So what I've learned is that you shouldn't set a double sided PCB into thermoplastic and then saw it with a hacksaw.. Time to buy more camera's.
