@@ -12,11 +12,12 @@ These videos manipulate the points inwards and outwards.
 
 [video](https://www.youtube.com/watch?v=WhknH0x3N54)
 
-The code for this is on github [link](https://github.com/terrybroad/wonderland_webcam)
+##Link to prototype
+[The code for this is on github](https://github.com/terrybroad/wonderland_webcam)
 
 Its not very well commented and a bit messy as it is a work in progress. 
 
-TO DO:
+##TO DO:
 
 Change the way it finds contours, at the moment it only takes a black and white threshold and uses that to find the blobs, this is certainly not a very good method, probably need to implement a edge detection kernel filter. 
 
