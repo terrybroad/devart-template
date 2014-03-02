@@ -8,7 +8,8 @@
 
 An experience similar to that of synaesthesia will be created by exploring the strong positive relationship between synchronised audio and visual experience. In order to achieve this, experimental image and audio analysis techniques will be used to control audio and visual filtering techniques.
 
-Live streaming to YouTube will be implemented to allow many people simultaneously to have the same perceptual experience. 
+The plan would be that in a gallery context, the video and audio output would streamed live to google hangouts, so there would be a channel where anyone from around the world could tune in and see what was been seen at the present moment by the viewer in the gallery space. 
+
 ## Link to Prototype
 
 [Initial Prototype](https://github.com/terrybroad/oculus-mediated-vision-prototype-1)
