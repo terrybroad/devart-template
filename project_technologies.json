@@ -1,7 +1,8 @@
 {
     "technologies": {
         "apis": [
-            "YouTube api"
+            "YouTube api",
+            "Google hangouts"
         ],
         "platforms": [
             "openFrameworks",
