@@ -4,15 +4,15 @@
 - [GitHub Account](https://github.com/terrybroad "GitHub Account")
 
 ## Description
-'Mediated Perceptions' is an experimental inquiry into the possibilities facilitated by having a fully governable prosthetic layer that alters the peceptual field of the outside world. A stereoscopic camera rig will be built and attached to the Oculus Rift along with headphones and a microphone rig, which will extend the field of auditory and visual perception.
+'Mediated Perceptions' is an experimental inquiry into the possibilities facilitated by having a fully governable prosthetic layer that alters the perceptual field of the outside world. A stereoscopic camera rig will be built and attached to the Oculus Rift along with headphones and a microphone rig, which will extend the field of auditory and visual perception.
 
-An experience similiar to that of synaesthesia will be created by exploring the strong positive relationship between synchronised audio and visual experience. In order to achieve this, experimental image and audio analysis techniques will be used to control audio and visiual filtering techniques.
+An experience similar to that of synaesthesia will be created by exploring the strong positive relationship between synchronised audio and visual experience. In order to achieve this, experimental image and audio analysis techniques will be used to control audio and visual filtering techniques.
 
-Live streaming to YouTube will be implemented to allow many people simoultaniously to have the same perceptual experience. 
+Live streaming to YouTube will be implemented to allow many people simultaneously to have the same perceptual experience. 
 ## Link to Prototype
 
 [Initial Prototype](https://github.com/terrybroad/oculus-mediated-vision-prototype-1 "Initial Prototype")
-<!--
+
 ## Example Code
 NOTE: Wrap your code blocks or any code citation by using ``` like the example below.
 ```
@@ -38,7 +38,7 @@ NOTE: Wrap your code blocks or any code citation by using ``` like the example b
          ofPopMatrix();
          hmdWarpShader.end();
          tex[0].unbind();
-```-->
+```
 ## Links to External Libraries
  
 [openFrameworks](https://github.com/openframeworks/openFrameworks "openFramworks") <br>
