@@ -1,26 +1,37 @@
-So while I wait for my new webcams to arrive I've been working on trying to make some interesting algorithms for just distorting a single webcam feed for the time being. 
+So instead of diving straight into the pit of no return that is developing my own uber-sophisticated shape detection and tracking algorithms, I decided to side track a bit and try doing some fun things with texture mapping on to a mesh a physics! 
 
-One of the idea's I for a visual effect in which to manipulate someones vision would be to track shapes and objects in the scene and warp the image, manipulating the size and shape of the images. Making some shapes larger and some smaller, almost like an 'Alice In Wonderland' kind of effect. 
+My idea was to have each vertex on the mesh (to which the video feed is mapped onto) be connected to each other vertex next to it by springs. Seemingly simple enough, but still became a bit of a headache to do in the end (until I got it to work of course). I wanted to avoid using a library like Box2d, so I could have full control over what was going on. I've pretty quickly come to the realisation that libraries aren't as instantly and magically useful as I had presumed, and are actually quite clunky and annoying. 
 
-[video](https://www.youtube.com/watch?v=1BbDZTKxXGQ)
+Anyway, I started off doing to a bit manual think, and dusting off some old A-Level physics books, and trying to figure out how I would translate this into a mesh of hundreds of springs being updated. 
 
-This was my first attempt at doing something like that, Im using the ofxOpenCV addon with openframeworks and using the Contour finder algorithm to detect blobs in the scene. The I am finding the center point of each blob and using that to manipulate the position of the verticies in the mesh of triangles that the video image is texture-wrapped onto. 
+![image3](../project_images/spring-notes.jpg)
 
-[video](https://www.youtube.com/watch?v=qPbNTcucNdM)
+I had thought I had figured it out but still needed to test out my hypothesis. I made a processing sketch to test it out before I jumped straight into the far less forgiving world of c++. Surprisingly I got it too work pretty quickly.
 
-These videos manipulate the points inwards and outwards.
+[video](https://www.youtube.com/watch?v=FpnJLLciJkY)
 
-[video](https://www.youtube.com/watch?v=WhknH0x3N54)
+Confident that I had a reasonably accurate simulation of a springs behaviour, I implemented it in a modified version of the wonderland blob detection code. And this is what I got.
+
+[video](https://www.youtube.com/watch?v=-S8ULznmxOc)
+
+All working surprisingly well, now for the money shot!
+
+[video](https://www.youtube.com/watch?v=TvpKUIxnjrY)
+
+And with more springs. (A little slow as I'm screen recording).
+
+[video](https://www.youtube.com/watch?v=_uVZpjfzhlw)
+
+All in all I'm very happy with the rate of progress I've been making in the past week :)
 
 ##Link to prototype
-[The code for this is on github](https://github.com/terrybroad/wonderland_webcam)
 
-Its not very well commented and a bit messy as it is a work in progress. 
+[The code for this is on github](https://github.com/terrybroad/Spring-Mesh-Webcam)
 
 ##TO DO:
 
-Change the way it finds contours, at the moment it only takes a black and white threshold and uses that to find the blobs, this is certainly not a very good method, probably need to implement a edge detection kernel filter. 
+Re-make the spring simulation as a vertex shader, I think some lightning fast GPU parallel processing couldn't hurt.
 
-Need to make it smoother either by averaging the positions of the vertex points of the meshes from the last 3 frames say, or by trying to track the blobs instead of them being completely discarded and made fresh each frame. 
+Have the motion of the springs controlled by motion detection. 
 
-Need to manipulated the points in a way that is relative to the size and shape of the blob... to do this I would probably have to implement my own blob class and contourfinding class... lots of fun ahead.
+Have the motion of the springs controlled by audio. 
