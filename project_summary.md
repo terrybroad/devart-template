@@ -11,7 +11,12 @@ An experience similar to that of synaesthesia will be created by exploring the s
 Live streaming to YouTube will be implemented to allow many people simultaneously to have the same perceptual experience. 
 ## Link to Prototype
 
-[Initial Prototype](https://github.com/terrybroad/oculus-mediated-vision-prototype-1 "Initial Prototype")
+[Initial Prototype](https://github.com/terrybroad/oculus-mediated-vision-prototype-1)
+
+[Blob Morph Prototype](https://github.com/terrybroad/wonderland_webcam)
+
+[Spring Mesh Webcam Prototype](https://github.com/terrybroad/Spring-Mesh-Webcam"Initial Prototype)
+
 
 ## Example Code
 NOTE: Wrap your code blocks or any code citation by using ``` like the example below.
