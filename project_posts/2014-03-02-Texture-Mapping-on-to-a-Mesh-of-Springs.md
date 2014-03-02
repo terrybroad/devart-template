@@ -8,19 +8,19 @@ Anyway, I started off doing to a bit manual think, and dusting off some old A-Le
 
 I had thought I had figured it out but still needed to test out my hypothesis. I made a processing sketch to test it out before I jumped straight into the far less forgiving world of c++. Surprisingly I got it too work pretty quickly.
 
-[video](https://www.youtube.com/watch?v=FpnJLLciJkY)
+https://www.youtube.com/watch?v=FpnJLLciJkY
 
 Confident that I had a reasonably accurate simulation of a springs behaviour, I implemented it in a modified version of the wonderland blob detection code. And this is what I got.
 
-[video](https://www.youtube.com/watch?v=-S8ULznmxOc)
+https://www.youtube.com/watch?v=-S8ULznmxOc
 
 All working surprisingly well, now for the money shot!
 
-[video](https://www.youtube.com/watch?v=TvpKUIxnjrY)
+https://www.youtube.com/watch?v=TvpKUIxnjrY
 
 And with more springs. (A little slow as I'm screen recording).
 
-[video](https://www.youtube.com/watch?v=_uVZpjfzhlw)
+https://www.youtube.com/watch?v=_uVZpjfzhlw
 
 All in all I'm very happy with the rate of progress I've been making in the past week :)
 
