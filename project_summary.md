@@ -1,4 +1,4 @@
-# Mediated Perceptions
+# Mediated Perception
 
 ## Terence Broad
 - [GitHub Account](https://github.com/terrybroad "GitHub Account")
