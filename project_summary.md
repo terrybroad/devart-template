@@ -1,7 +1,7 @@
 # Mediated Perceptions
 
 ## Terence Broad
-- [Website](http://igor.gold.ac.uk/~ma201tb/terencebroad/index.html)
+- [www.terencebroad.com](http://www.terencebroad.com)
 - [GitHub Account](https://github.com/terrybroad "GitHub Account")
 
 ## Description
