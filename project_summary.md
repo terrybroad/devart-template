@@ -1,4 +1,4 @@
-# Mediated Perceptions
+# Mediated Perception
 
 ## Terence Broad
 - [www.terencebroad.com](http://www.terencebroad.com)
