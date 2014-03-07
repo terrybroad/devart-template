@@ -1,4 +1,4 @@
-# Mediated Perception
+# Mediated Perceptions
 
 ## Terence Broad
 - [www.terencebroad.com](http://www.terencebroad.com)
@@ -7,9 +7,9 @@
 ## Description
 'Mediated Perceptions' is an experimental inquiry into the possibilities facilitated by having a fully governable prosthetic layer that alters the perceptual field of the outside world. A stereoscopic camera rig will be built and attached to the Oculus Rift along with headphones and a microphone rig, which will extend the field of auditory and visual perception.
 
-An experience similar to that of synaesthesia will be created by exploring the strong positive relationship between synchronised audio and visual experience. In order to achieve this, experimental image and audio analysis techniques will be used to control audio and visual filtering techniques.
+Using the Google hangouts API, people online will be able to choose and link up sets of triggers and responses that control the perceptual experience for the user in the gallery. The video and audio feed will then be livestreamed online, so anyone will be able watch what is being percieved by the viewer in the gallery at that exact time. Everytime a new experience is submitted online it will be added to a queue, and a new one will be excecuted everytime a new viewer tries on the headset in the gallery. 
 
-The plan would be that in a gallery context, the video and audio output would streamed live to google hangouts, so there would be a channel where anyone from around the world could tune in and see what was been seen at the present moment by the viewer in the gallery space. 
+The triggers will be things like motion detection, face detection, head movement, pitch, loudness and brightness. Responses will be all sorts of different methods of image manipulation like colour shifting, wobble and morphing effects, blurring, chromatic abberation and temporal layering. 
 
 ## Link to Prototype
 
@@ -56,6 +56,6 @@ NOTE: Wrap your code blocks or any code citation by using ``` like the example b
 [OSC](http://opensoundcontrol.org/ "OSC") <br>
 
 ## Images & Videos
+![image1](project_images/controlanimation.gif)
 https://www.youtube.com/watch?v=1BbDZTKxXGQ&feature=youtu.be
 https://www.youtube.com/watch?v=_uVZpjfzhlw
-![image1](project_images/screenshot2.png)
