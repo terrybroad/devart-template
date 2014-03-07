@@ -1,26 +1,7 @@
-So while I wait for my new webcams to arrive I've been working on trying to make some interesting algorithms for just distorting a single webcam feed for the time being. 
+So a big uncertainty which has been looming over the project so far has been the question of what exactly was going to control the image manipulation and what exactly I was aiming to achieve. Whether I was going to experiment and pick what worked myself, or whether I work aim to achieve one specific experience (i.e. a synaesthesia simulator), or wether user interaction would control the manipulation. 
 
-One of the idea's I for a visual effect in which to manipulate someones vision would be to track shapes and objects in the scene and warp the image, manipulating the size and shape of the images. Making some shapes larger and some smaller, almost like an 'Alice In Wonderland' kind of effect. 
+I've been thinking alot, and I've just had a brainwave (possibly spurned on by the excitment of being featured today, which is awesome!). My original intention was just to stream the live feed seen by the viewer, but after having a more in depth look at the hangouts API (which is alot more poweful than I had presumed). Why not integrate user participation into the experience and intrate this into the hangouts live steam? 
 
-[video](https://www.youtube.com/watch?v=1BbDZTKxXGQ)
+So instead of me choosing the experience of the user in the gallery space, why not let people on the internet control the experience? I will create a series of triggers and responses that are interchangeable and stackable, then anyone can login to the mediated perception website, choose a set of parameters, then it will be added to a queue of experiences. And everytime a new visitor to the exhibition puts the headset on, it will excecute a new experience that has been chosen online. Which will be livestreamed online, and the user online will be given a notification just before there experience is going to be aired (perhaps it will even be saved and stored online). 
 
-This was my first attempt at doing something like that, Im using the ofxOpenCV addon with openframeworks and using the Contour finder algorithm to detect blobs in the scene. The I am finding the center point of each blob and using that to manipulate the position of the verticies in the mesh of triangles that the video image is texture-wrapped onto. 
-
-[video](https://www.youtube.com/watch?v=qPbNTcucNdM)
-
-These videos manipulate the points inwards and outwards.
-
-[video](https://www.youtube.com/watch?v=WhknH0x3N54)
-
-##Link to prototype
-[The code for this is on github](https://github.com/terrybroad/wonderland_webcam)
-
-Its not very well commented and a bit messy as it is a work in progress. 
-
-##TO DO:
-
-Change the way it finds contours, at the moment it only takes a black and white threshold and uses that to find the blobs, this is certainly not a very good method, probably need to implement a edge detection kernel filter. 
-
-Need to make it smoother either by averaging the positions of the vertex points of the meshes from the last 3 frames say, or by trying to track the blobs instead of them being completely discarded and made fresh each frame. 
-
-Need to manipulated the points in a way that is relative to the size and shape of the blob... to do this I would probably have to implement my own blob class and contourfinding class... lots of fun ahead.
+![image1](../project_images/controlanimation.gif)
