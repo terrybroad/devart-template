@@ -1,11 +1,11 @@
-# Mediated Perceptions
+# Mediated Perception
 
 ## Terence Broad
 - [www.terencebroad.com](http://www.terencebroad.com)
 - [GitHub Account](https://github.com/terrybroad "GitHub Account")
 
 ## Description
-'Mediated Perceptions' is an experimental inquiry into the possibilities facilitated by having a fully governable prosthetic layer that alters the perceptual field of the outside world. A stereoscopic camera rig will be built and attached to the Oculus Rift along with headphones and a microphone rig, which will extend the field of auditory and visual perception.
+'Mediated Perception' is an experimental inquiry into the possibilities facilitated by having a fully governable prosthetic layer that alters the perceptual field of the outside world. A stereoscopic camera rig will be built and attached to the Oculus Rift along with headphones and a microphone rig, which will extend the field of auditory and visual perception.
 
 Using the Google hangouts API, people online will be able to choose and link up sets of triggers and responses that control the perceptual experience for the user in the gallery. The video and audio feed will then be livestreamed online, so anyone will be able watch what is being percieved by the viewer in the gallery at that exact time. Everytime a new experience is submitted online it will be added to a queue, and a new one will be excecuted everytime a new viewer tries on the headset in the gallery. 
 
