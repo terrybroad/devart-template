@@ -9,15 +9,26 @@ fragment shaders.
 Here are the videos of my progress, I would highly recommend watching them in HD.
 
 This is a simple posterize effect, where the threshold is being controlled by the low frequencies.
+
 http://www.youtube.com/watch?v=pjrtkVok8SE
-This is a very similar effect, but in this case threshold for the red green and blue channels are being controlled separately by the low, medium and high frequencies.
+
+This is a very similar effect, but in this case threshold for the red green and blue channels are being controlled
+separately by the low, medium and high frequencies.
+
 http://www.youtube.com/watch?v=N-EsaaBtW4s
+
 This is offsetting the texture reference by a sine function, where the frequency of the sine function is being controlled by the low frequencies.
+
 http://www.youtube.com/watch?v=_vFZXHKl7CA
+
 This is offsetting the texture reference for each colour channel linearly, where the red green and blue channels are being controlled seperately by the low, medium and high frequencies.
+
 http://www.youtube.com/watch?v=u_LzU2jVCmo
+
 This is combining the aberration and wobble effects, to offset the texture reference for each colour channel, but this time using the sine function where the frequency increases and the red green and blue channels are being controlled seperately by the low, medium and high frequencies.
+
 http://www.youtube.com/watch?v=q7SoNylkKKM
+
 ##Link to prototype 
 
 [The code for this is on github](https://github.com/terrybroad/Music_Re-Visualiser)
