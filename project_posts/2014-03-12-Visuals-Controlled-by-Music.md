@@ -29,6 +29,8 @@ This is combining the aberration and wobble effects, to offset the texture refer
 
 http://www.youtube.com/watch?v=q7SoNylkKKM
 
+It would not be my intention to necessarily be playing music to people in a gallery context, rather the software would be analysing the ambient noise in the room picked up from microphones, this was just a good way of demonstrating the code.
+
 ##Link to prototype 
 
 [The code for this is on github](https://github.com/terrybroad/Music_Re-Visualiser)
