@@ -19,6 +19,7 @@ The triggers will be things like motion detection, face detection, head movement
 
 [Spring Mesh Webcam Prototype](https://github.com/terrybroad/Spring-Mesh-Webcam"Initial Prototype)
 
+[Music Re-Visualiser Prototype](https://github.com/terrybroad/Music_Re-Visualiser)
 
 ## Example Code
 NOTE: Wrap your code blocks or any code citation by using ``` like the example below.
