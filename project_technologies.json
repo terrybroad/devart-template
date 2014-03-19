@@ -12,7 +12,8 @@
         "toolkits": [
             "openGL",
             "openCV",
-            "Maximillian"
+            "Maximillian",
+            "glsl"
         ]
     },
     "themes": [
