@@ -3,7 +3,6 @@ Everything works and I've also calibrated the shaders to work properly and it al
 
 Here's the webcam's.
 ![image1](../project_images/rebuild/1.jpg)
-<!-- ![image2](../project_images/rebuild/2.jpg) -->
 
 Sawing them apart.
 ![image3](../project_images/rebuild/3.jpg)
@@ -25,7 +24,6 @@ Indenting them into thermoplastic.
 ![image9](../project_images/rebuild/9.jpg)
 
 Cutting and drilling.
-<!--![image10](../project_images/rebuild/10.jpg)-->
 ![image11](../project_images/rebuild/11.jpg)
 
 Accidentaly drilled some holes into our salvaged pool table. 
