@@ -21,5 +21,5 @@ Cutting and drilling.
 ![image11](../project_images/rebuild/11.jpg)
 Accidentaly drilled some holes into our salvaged pool table. 
 ![image12](../project_images/rebuild/12.jpg)
-And the final prototype in all its glory!
+And the final prototype in all its glory, certainly not the best looking thing but it does the job!
 ![image13](../project_images/rebuild/13.jpg)
