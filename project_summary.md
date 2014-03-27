@@ -12,6 +12,7 @@ Using the Google hangouts API, people online will be able to choose and link up 
 The triggers will be things like motion detection, face detection, head movement, pitch, loudness and brightness. Responses will be all sorts of different methods of image manipulation like colour shifting, wobble and morphing effects, blurring, chromatic abberation and temporal layering. 
 
 ## Link to Prototype
+[Final Prototype](https://github.com/terrybroad/devart-template/tree/master/project_code)
 
 [Initial Prototype](https://github.com/terrybroad/oculus-mediated-vision-prototype-1)
 
@@ -22,30 +23,84 @@ The triggers will be things like motion detection, face detection, head movement
 [Music Re-Visualiser Prototype](https://github.com/terrybroad/Music_Re-Visualiser)
 
 ## Example Code
-NOTE: Wrap your code blocks or any code citation by using ``` like the example below.
-```
-         GL_LINEAR;
-         GL_LINEAR_MIPMAP_LINEAR;
-         framebuffer.begin();
-         tex[0].bind();
-         mesh.draw();
-         tex[0].unbind();
-         framebuffer.end();
-        
-         hmdWarpShader.begin();
-         hmdWarpShader.setUniformTexture("tex", framebuffer.getTextureReference(), 0);
-         hmdWarpShader.setUniform2f("LensCenter", _x + (0+ DistortionXCenterOffset * 0.5f)*0.5f, _y + _h*0.5f );
-         hmdWarpShader.setUniform2f("ScreenCenter", _x + _w*1.0f, _y + _h*1.0f );
-         hmdWarpShader.setUniform2f("Scale", (_w/1.0f) * 1.0f, (_h/1.0f) * 1.0f * as );
-         hmdWarpShader.setUniform2f("ScaleIn", (1.0f/_w), (1.0f/_h) / as );
-         hmdWarpShader.setUniform4f("HmdWarpParam", K0, K1, K2, K3 );
 
-         ofPushMatrix();
-         ofTranslate(0,0);
-         framebuffer.draw(0, 0);
-         ofPopMatrix();
-         hmdWarpShader.end();
-         tex[0].unbind();
+```
+    switch(switchInt)
+    {
+        case 0:
+        fbo = effect.renderEffect(tex,trigger.returnData());
+        break;
+        
+        case 1:
+            fbo = posterize.renderEffect(tex,trigger.returnData());
+        break;
+        
+        case 2:
+            fbo = posterizergb.renderEffect(tex,trigger.returnData());
+        break;
+        
+        case 3:
+            fbo = abberation.renderEffect(tex,trigger.returnData());
+        break;
+        
+        case 4:
+            fbo = perlinxyz.renderEffect(tex,trigger.returnData());
+        break;
+        
+        case 5:
+        fbo = perlinrgb.renderEffect(tex,trigger.returnData());
+        break;
+        
+        default:
+            fbo = effect.renderEffect(tex,trigger.returnData());
+        break;
+    }
+
+    fbo.at(0).getTextureReference().bind();
+
+    hmdWarpShader.begin();
+    hmdWarpShader.setUniformTexture("tex", fbo.at(0).getTextureReference(), 0);
+    hmdWarpShader.setUniform2f("LensCenter", DistortionXCenterOffset, 0 );
+    hmdWarpShader.setUniform2f("ScreenCenter", _x + _w*1.0f, _y + _h*1.0f );
+    hmdWarpShader.setUniform2f("Scale", (_w/1.0f) * 1.0f, (_h/1.0f) * 1.0f * as );
+    hmdWarpShader.setUniform2f("ScaleIn", (1.0f/_w), (1.0f/_h) / as );
+    hmdWarpShader.setUniform4f("HmdWarpParam", K0, K1, K2, K3 );
+
+    glBegin(GL_QUADS);
+    glTexCoord2f(1,0); glVertex3f(0,0,0);
+    glTexCoord2f(0,0); glVertex3f(640,0,0);
+    glTexCoord2f(0,1); glVertex3f(640,800,0);
+    glTexCoord2f(1,1); glVertex3f(0,800,0);
+    glEnd();
+    
+    hmdWarpShader.end();
+    
+    fbo.at(0).getTextureReference().unbind();
+
+    // -----------
+
+    fbo.at(1).getTextureReference().bind();
+
+    hmdWarpShader.begin();
+    hmdWarpShader.setUniformTexture("tex", fbo.at(1).getTextureReference(), 0);
+    hmdWarpShader.setUniform2f("LensCenter", DistortionXCenterOffset , 1);
+    hmdWarpShader.setUniform2f("ScreenCenter", _x + _w*1.0f, _y + _h*1.0f );
+    hmdWarpShader.setUniform2f("Scale", (_w/1.0f) * 1.0f, (_h/1.0f) * 1.0f * as );
+    hmdWarpShader.setUniform2f("ScaleIn", (1.0f/_w), (1.0f/_h) / as );
+    hmdWarpShader.setUniform4f("HmdWarpParam", K0, K1, K2, K3 );
+     
+    ofPushMatrix();
+    ofTranslate(640,0);
+    glBegin(GL_QUADS);
+    glTexCoord2f(1,0); glVertex3f(0,0,0);
+    glTexCoord2f(0,0); glVertex3f(640,0,0);
+    glTexCoord2f(0,1); glVertex3f(640,800,0);
+    glTexCoord2f(1,1); glVertex3f(0,800,0);
+    glEnd();
+    ofPopMatrix();
+    hmdWarpShader.end();
+    fbo.at(1).getTextureReference().unbind();
+
 ```
 ## Links to External Libraries
  
@@ -53,11 +108,10 @@ NOTE: Wrap your code blocks or any code citation by using ``` like the example b
 [openCV](https://github.com/Itseez/opencv "OpenCV") <br>
 [Maximillian](https://github.com/micknoise/Maximilian "Maximillian") <br>
 [Google C++ API](https://github.com/google/google-api-cpp-client "https://github.com/google/google-api-cpp-client") <br>
-[Wekinator](https://code.google.com/p/wekinator/ "Wekinator") <br>
-[OSC](http://opensoundcontrol.org/ "OSC") <br>
 
 ## Images & Videos
 ![image1](project_images/controlanimation.gif)
+![image2](project_images/rebuild/13.jpg)
 http://www.youtube.com/watch?v=N-EsaaBtW4s
 https://www.youtube.com/watch?v=1BbDZTKxXGQ&feature=youtu.be
 https://www.youtube.com/watch?v=_uVZpjfzhlw
