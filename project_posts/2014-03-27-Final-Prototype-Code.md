@@ -1,6 +1,6 @@
 So I have uploaded to code for the [Final Prototype](https://github.com/terrybroad/devart-template/tree/master/project_code) onto github. It very closely follows the class structure I have outlined in my class diagram.
 Where the functionality is split into trigger and effect classes, (where all of the different triggers and classes inherit from the Trigger and Effect base classes). They pass between them polymorphic datapacket structs and implicity behave in different ways depending on what type of datapacket it is. 
-I have not implemented stackable joiner classes yet, where lots of effects could be used but as in this prototype there was only one type of trigger it was not necessary to implement. 
+I have not implemented stackable joiner classes yet, where lots of effects could be used one on top of each other but for this simple prototype it was not neccesary to implement. 
 
 
 This is the Trigger base class. The minimum functionality for the trigger class is to be able to edit and return a datapacket.
@@ -230,7 +230,7 @@ It then draws the fbo's on left and right hand side for the screen. Applying the
 
 ```
 
-And here is the code for the fragment shader to do that. I ported this into GLSL from the shader code [Will Steptoe](http://willsteptoe.com/) posted online.
+And here is the code for the fragment shader to do that. I ported this into GLSL from the CG shader code [Will Steptoe](http://willsteptoe.com/) posted online.
 ```
 uniform sampler2DRect tex;
 uniform vec2 LensCenter; 
