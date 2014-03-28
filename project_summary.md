@@ -25,36 +25,8 @@ The triggers will be things like motion detection, face detection, head movement
 ## Example Code
 
 ```
-    switch(switchInt)
-    {
-        case 0:
-        fbo = effect.renderEffect(tex,trigger.returnData());
-        break;
-        
-        case 1:
-            fbo = posterize.renderEffect(tex,trigger.returnData());
-        break;
-        
-        case 2:
-            fbo = posterizergb.renderEffect(tex,trigger.returnData());
-        break;
-        
-        case 3:
-            fbo = abberation.renderEffect(tex,trigger.returnData());
-        break;
-        
-        case 4:
-            fbo = perlinxyz.renderEffect(tex,trigger.returnData());
-        break;
-        
-        case 5:
-        fbo = perlinrgb.renderEffect(tex,trigger.returnData());
-        break;
-        
-        default:
-            fbo = effect.renderEffect(tex,trigger.returnData());
-        break;
-    }
+
+    fbo = effect.renderEffect(tex,trigger.returnData());
 
     fbo.at(0).getTextureReference().bind();
 
@@ -110,8 +82,5 @@ The triggers will be things like motion detection, face detection, head movement
 [Google C++ API](https://github.com/google/google-api-cpp-client "https://github.com/google/google-api-cpp-client") <br>
 
 ## Images & Videos
+http://www.youtube.com/watch?v=xbxClsMGBzU&list=HL1395989934&feature=mh_lolz
 ![image1](project_images/controlanimation.gif)
-![image2](project_images/rebuild/13.jpg)
-http://www.youtube.com/watch?v=N-EsaaBtW4s
-https://www.youtube.com/watch?v=1BbDZTKxXGQ&feature=youtu.be
-https://www.youtube.com/watch?v=_uVZpjfzhlw
