@@ -82,5 +82,5 @@ The triggers will be things like motion detection, face detection, head movement
 [Google C++ API](https://github.com/google/google-api-cpp-client "https://github.com/google/google-api-cpp-client") <br>
 
 ## Images & Videos
-http://www.youtube.com/watch?v=xbxClsMGBzU&list=HL1395989934&feature=mh_lolz
+http://www.youtube.com/watch?v=xbxClsMGBzU
 ![image1](project_images/controlanimation.gif)
